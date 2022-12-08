@@ -9,7 +9,7 @@ class OcbSumo < Formula
     url "https://github.com/open-telemetry/opentelemetry-collector.git", branch: "main"
   end
 
-  depends_on "go@1.18" => :build
+  depends_on "go" => :build
 
   def install
     build_ts = Time.now().strftime("%Y-%m-%d_%H:%M:%S")
