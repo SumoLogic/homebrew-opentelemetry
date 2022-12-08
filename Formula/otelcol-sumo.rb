@@ -26,7 +26,7 @@ class OtelcolSumo < Formula
     ENV["CGO_ENABLED"] = "1"
 
     chdir "otelcolbuilder" do
-      system "make", "build", "VERSION=version"
+      system "make", "build", "VERSION=#{version}"
 
       chdir "cmd" do
         bin.install "otelcol-sumo"
